@@ -153,6 +153,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setContentHidden:(BOOL)hidden animated:(BOOL)animated;
 
+- (void)updateCancelButtonTitle;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -447,6 +447,12 @@
 
 - (void)keypadButtonTapped
 {
+    [self updateCancelButtonTitle];
+//    [self.cancelButton sizeToFit]; /* FIXME: Can't use in here, it prevent animation. */
+}
+
+- (void)updateCancelButtonTitle
+{
     NSString *title = nil;
     if (self.passcodeView.passcode.length > 0) {
         title = NSLocalizedString(@"Delete", @"Delete");
