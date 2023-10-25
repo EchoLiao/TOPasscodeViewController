@@ -666,6 +666,7 @@
         self.passcodeView.hidden = hidden;
         self.leftButton.hidden = hidden;
         self.rightButton.hidden = hidden;
+        [self updateCancelButtonTitle];
     };
 
     void (^completionBlock)(BOOL) = ^(BOOL complete) {
